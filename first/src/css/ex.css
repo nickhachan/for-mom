@@ -1,0 +1,82 @@
+.exercise{
+    min-height: 500px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px black;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.question>.name{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.question>.value{
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.ans__box{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    padding:10px 20px;
+    background-color: #ccc;
+}
+.ans__box>.ans{
+    margin-bottom: 10px;
+}
+.ans__box>.ans:hover{
+    opacity: 0.7;
+}
+.ans__box>.ans+.ans{
+    border-top: 1px solid black;
+}
+.item__holder{
+    overflow: hidden;
+}
+.ex__list{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.listbox{
+    overflow-x: hidden;
+    text-align: center;
+    padding: 0 10px;
+    flex: 1;
+}
+.ex__list .ex{
+    display: block;
+    width: max-content;
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    min-width: 30px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.ex__list .ex:hover{
+    opacity: 0.7;
+}
+.ex__list>*{
+    padding: 0 10px;
+}
+.ex__list .ex+.ex{
+    border-left: 0;
+}
+.ex__holder{
+    display: flex;
+    transition:500ms ease-out;
+}
+.moveBox>*{
+    height: 100%;
+    padding: 0 5px;
+}
+.tick{
+    background-color: black !important;
+    color: white;
+}
