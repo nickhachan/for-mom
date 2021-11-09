@@ -155,6 +155,63 @@ const ex=[
         c3:'forsikringsselskapet',
         c4:'skatteetaten.no',
         ans:2
+    },
+    {
+        question:'hva brukes skattepengene til?',
+        c1:'batale velferdsondningene',
+        c2:' gratis røyk til alle over 18 år',
+        c3:'gratis alkohol til alle pensjonister',
+        ans:1
+    },
+    {
+        question:'hva menes med å <<jobbe svart>>?',
+        c1:'å jobbe deltid',
+        c2:'å jobbe uten å betale skatt',
+        c3:'å jobbe om natta',
+        ans:2
+    },
+    {
+        question:'hva jobber fagforeningene mest med?',
+        c1:'lønn og arbeidstid',
+        c2:'skatt og arbeidstid',
+        c3:'skatt og avgifter',
+        ans:1
+    },
+    {
+        question:'medisiner på blå resept er billigere enn andre medisiner. hvem får medisiner på blå resept?',
+        c1:'folk som har sykdommer som krever behandling i mar enn tre måneder',
+        c2:'folk som ikke har jobb',
+        c3:'studenter som ikke har deltid jobb',
+        ans:1
+    },
+    {
+        question:'hvilket telefonnummer ringer du når du trenger ambulanse?',
+        c1:'1881',
+        c2:'113',
+        c3:'009',
+        ans:2
+    },
+    {
+        question:'gravide har rett til svangerskapskontroll. Hvor mye må de vanligvis betale?',
+        c1:'100 kr per kontroll',
+        c2:'ingenting',
+        c3:'800 kr per kontroll',
+        ans:2
+    },
+    {
+        question:'i Norge har vi fastlegeordning. hva menes med det?',
+        c1:'du får legetime samme dag som du bestiller time',
+        c2:'du har rett til en fast lege som du kontakter når du er syk',
+        c3:'det er gratis å gp til legen',
+        ans:2
+    },
+    {
+        question:'hvor mye må person på 23 år betale hos tannlegen?',
+        c1:'25%',
+        c2:'50%',
+        c3:'75%',
+        c4:'100%',
+        ans:4
     }
 ]
 /*

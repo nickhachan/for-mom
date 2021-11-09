@@ -6,7 +6,9 @@ var $$=document.querySelectorAll.bind(document),
     nowId=0,
     userAns=[],
     showing,
-    showBtn=$('.vision')
+    showBtn=$('.vision'),
+    length= ex.length,
+    score=$('.point')
 ex.sort(()=>Math.random()-0.5)
 for(var i of ans){
     i.onclick=(e)=>{update(true);showAns(true)}
@@ -49,12 +51,15 @@ function showAns(antiChange){
     if(!antiChange&&userAns.length){
         showBtn.innerHTML=showing?'xem dap an':'nghi xem'
         showing=showing?false:true
+        score.style.display=showing?'block':'none'
     }
     for(var i of $$('.ex'))i.classList.remove('bg-red','bg-green')
-    for(var i2 of ans){
-        i2.parentNode.classList.remove('bg-green','bg-red')
+    for(var i of ans){
+        i.parentNode.classList.remove('bg-green','bg-red')
     }
+    let point=0
     for(var i of userAns){
+        point++
         if(showing){
             let idBox=$(`.ex[data-id="${i.questId}"]`)
             idBox.classList.add(i.correct?'bg-green':'bg-red')
@@ -68,6 +73,7 @@ function showAns(antiChange){
             }
         }
     }
+    score.innerHTML=userAns.filter(e=>e.correct).length+' / '+length
 }
 var remove=()=>$(`.ex[data-id="${nowId}"]`).classList.remove('tick'),
     add=()=>$(`.ex[data-id="${nowId}"]`).classList.add('tick')
